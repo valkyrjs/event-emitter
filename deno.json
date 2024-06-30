@@ -1,0 +1,26 @@
+{
+  "name": "@valkyr/event-emitter",
+  "version": "1.0.0",
+  "exports": "./event-emitter.ts",
+  "imports": {
+    "eventemitter3": "npm:eventemitter3@5.0.1"
+  },
+  "exclude": [
+    ".vscode"
+  ],
+  "lint": {
+    "rules": {
+      "exclude": [
+        "no-explicit-any",
+        "require-await"
+      ]
+    }
+  },
+  "fmt": {
+    "lineWidth": 120
+  },
+  "tasks": {
+    "test": "deno test --allow-all --unstable-ffi",
+    "lint": "deno lint --fix"
+  }
+}
